@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "myRVApp",
     "name": "ReactNativeTest2",
     "slug": "ReactNativeTest2",
     "version": "1.0.0",
@@ -13,17 +14,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pablogarzam.ReactNativeTest2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCTmmeRPyAo7No0ufYbgKS4SewhRkBAt1I"
+        }
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.pablogarzam.ReactNativeTest2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e747417d-b530-4d1b-82fa-a481cfd3da45"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
